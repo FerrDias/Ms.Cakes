@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de cadastro de clientes da Ms. Cakes.">
+    <meta name="author" content="Seu Nome">
+    <title>Cadastro de Clientes - Ms. Cakes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ms. Cakes</h1>
+        <nav>
+            <a href="initial.html">Voltar ao Início</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cadastro-cliente">
+            <h2>Cadastro de Clientes</h2>
+            <form action="processar_cliente.php" method="POST">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    
+                    <label for="nome_cliente">Nome completo (Obrigatório):</label>
+                    <input type="text" name="nome_cliente" id="nome_cliente" required> 
+                    
+                    <br><br>
+
+                    <label for="tel_cliente">Telefone (Obrigatório):</label>
+                    <input type="tel" name="tel_cliente" id="tel_cliente" placeholder="(00) 00000-0000" required> 
+
+                    <br><br>
+
+                    <label for="email_cliente">E-mail (Opcional):</label>
+                    <input type="email" name="email_cliente" id="email_cliente"> 
+
+                    <br><br>
+                    <button type="submit">Salvar Cliente</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sistema de Gestão de Bolos - 2026</p>
+    </footer>
+</body>
+</html>
