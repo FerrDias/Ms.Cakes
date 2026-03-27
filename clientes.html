@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página de cadastro de clientes da Ms. Cakes.">
-    <meta name="author" content="Seu Nome">
     <title>Cadastro de Clientes - Ms. Cakes</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,29 +26,26 @@
             <form action="processar_cliente.php" method="POST">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
-                    
+
                     <label for="nome_cliente">Nome completo (Obrigatório):</label>
-                    <input type="text" name="nome_cliente" id="nome_cliente" required> 
-                    
-                    <br><br>
+                    <input type="text" name="nome_cliente" id="nome_cliente" required>
 
                     <label for="tel_cliente">Telefone (Obrigatório):</label>
-                    <input type="tel" name="tel_cliente" id="tel_cliente" placeholder="(00) 00000-0000" required> 
-
-                    <br><br>
+                    <input type="tel" name="tel_cliente" id="tel_cliente" placeholder="(00) 00000-0000" required>
 
                     <label for="email_cliente">E-mail (Opcional):</label>
-                    <input type="email" name="email_cliente" id="email_cliente"> 
-
-                    <br><br>
-                    <button type="submit">Salvar Cliente</button>
+                    <input type="email" name="email_cliente" id="email_cliente">
                 </fieldset>
+
+                <div style="text-align: center;">
+                    <button type="submit">Salvar Cliente</button>
+                </div>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>Sistema de Gestão de Bolos - 2026</p>
+        <p>&copy; 2026 Ms. Cakes - Gestão de Produção</p>
     </footer>
 </body>
 </html>
