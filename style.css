@@ -1,3 +1,4 @@
+/* CONFIGURAÇÕES GLOBAIS */
 * {
     box-sizing: border-box;
 }
@@ -5,9 +6,14 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
-    background: #fdfafb; 
-    color: #4a342e; 
+    background: #fdfafb;
+    color: #4a342e;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+/* HEADER E NAVEGAÇÃO */
 
 header {
     background: white;
@@ -15,9 +21,9 @@ header {
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    min-height: 180px; 
+    min-height: 180px;
     text-align: center;
 }
 
@@ -26,39 +32,16 @@ header {
     width: 100%;
 }
 
-#topo-empresa h1 {
+#topo-empresa h1,
+h1.title {
     margin: 0;
     font-size: 2.5rem;
     color: #ff4d6d;
+    letter-spacing: -1px;
 }
 
 nav {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 40px; 
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 30px;
-}
-
-h1 {
-    color: #ff4d6d;
-    margin: 0;
-    font-size: 2.5rem;
-    letter-spacing: -1px;
-}
-
-h1.title {
-    font-size: 2.5rem;
-}
-
-nav {
     display: flex;
     justify-content: center;
 }
@@ -91,12 +74,12 @@ nav a:hover {
     border-bottom: 2px solid #ff4d6d;
 }
 
-fieldset label {
-    margin-top: 15px;
-}
+/* SEÇÕES PRINCIPAIS */
 
-fieldset label:first-of-type {
-    margin-top: 0;
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .hero {
@@ -115,14 +98,10 @@ fieldset label:first-of-type {
 .hero h2 {
     font-size: 38px;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
+/* CARDS E BOTÕES */
 
 .opcoes-rapidas {
     display: flex;
@@ -135,7 +114,7 @@ section {
 .card {
     background: white;
     border-radius: 20px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
     padding: 40px 30px;
     text-align: center;
     text-decoration: none;
@@ -156,6 +135,33 @@ section {
     margin-bottom: 10px;
 }
 
+.btn-fake {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #ffe5ec;
+    color: #ff4d6d;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.dashboard-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.stat-number {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff4d6d;
+    margin: 5px 0 0 0;
+}
+
+/* FORMULÁRIOS */
+
 fieldset {
     border: 1px solid #ffe5ec;
     border-radius: 15px;
@@ -172,26 +178,35 @@ legend {
 
 label {
     display: block;
+    margin-top: 15px;
     margin-bottom: 8px;
     font-weight: 500;
 }
 
-input, select {
+label:first-of-type {
+    margin-top: 0;
+}
+
+input,
+select {
     width: 100%;
     padding: 14px;
     border-radius: 10px;
     border: 1px solid #ddd;
     margin-bottom: 5px;
     background-color: #f9f9f9;
+    font-family: inherit;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
     outline: none;
     border-color: #ff4d6d;
     background-color: #fff;
 }
 
-.btn, button[type="submit"] {
+button[type="submit"],
+.btn {
     background: #ff4d6d;
     color: white;
     padding: 15px 30px;
@@ -206,20 +221,13 @@ input:focus, select:focus {
     width: auto;
 }
 
-.btn:hover, button[type="submit"]:hover {
+button[type="submit"]:hover,
+.btn:hover {
     background: #e63950;
     box-shadow: 0 4px 12px rgba(230, 57, 80, 0.3);
 }
 
-.btn-fake {
-    display: inline-block;
-    margin-top: 15px;
-    background-color: #ffe5ec;
-    color: #ff4d6d;
-    padding: 8px 25px;
-    border-radius: 20px;
-    font-weight: bold;
-}
+/* RODAPÉ */
 
 footer {
     text-align: center;
@@ -228,4 +236,4 @@ footer {
     margin-top: 50px;
     color: #888;
     font-size: 0.9em;
-}
+}   
